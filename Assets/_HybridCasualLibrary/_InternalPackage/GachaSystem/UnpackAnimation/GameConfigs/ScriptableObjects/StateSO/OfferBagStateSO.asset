@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31d73c138b3e4418a590ae147720cf5, type: 3}
+  m_Name: OfferBagStateSO
+  m_EditorClassIdentifier: 
+  m_guid: 555e8804a050f4592bb1fa387aba96e9
+  transitions:
+  - {fileID: 11400000, guid: e07c0fdf15be04363a0275ff77b1ece3, type: 2}
+  - {fileID: 11400000, guid: eca56b01400214c1fad708dd2eea593d, type: 2}
+  offerNewBagUIPrefab: {fileID: -4187790952502265226, guid: 5a36d6716524d49bd9ff72791b59db18, type: 3}
+  camRotateToEndRotDuration: 0

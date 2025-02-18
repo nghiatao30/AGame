@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 62769ae91b1fd40ad8a9a2d923987d1d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - boosterTemplate: {fileID: 11400000, guid: d3ce1765092bd4490a052cfbb50210fc, type: 2}
+  - gemTemplate: {fileID: 11400000, guid: d78211b000a0c4c9c8a867a6022e0686, type: 2}
+  - characterTemplate: {fileID: 11400000, guid: 7a2c648abe17f4125b59502b77af8b56, type: 2}
+  - skinManagerSO: {fileID: 11400000, guid: df33be85abe144a2a9ab2df4a28e17af, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

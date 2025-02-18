@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f77149a922d4a5aaabe19cbd406a28, type: 3}
+  m_Name: IAPProductSO_idle.push.up.game.removeads
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnProductPurchased
+      Entry: 6
+      Data: 
+    - Name: currencyItems
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[CurrencyType, Assembly-CSharp],[System.Int32,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[CurrencyType, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  itemID: idle.push.up.game.removeads
+  productType: 0
+  isRemoveAds: 1
+  itemType: 2
+  itemName: 
+  icon: {fileID: 0}
+  description: 
+  defaultPrice: $0.99
+  defaultOriginalPrice: $0.99
+  referencedProductSOItems: []
+  overrideIsPurchasedList: []

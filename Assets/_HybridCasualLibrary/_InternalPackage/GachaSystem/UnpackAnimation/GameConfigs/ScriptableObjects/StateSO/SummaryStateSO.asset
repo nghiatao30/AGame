@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3bbc7a25ffa47b293d1638fc6bcfce, type: 3}
+  m_Name: SummaryStateSO
+  m_EditorClassIdentifier: 
+  m_guid: 14b724b886f3e41b594a0532f4bad71d
+  transitions:
+  - {fileID: 11400000, guid: b47781d69c0bf4d7e8a77c746ee6bf48, type: 2}
+  - {fileID: 11400000, guid: 59497e0e9008d43cfbd9d39be4da2447, type: 2}
+  delayToShowSummary: 0.5
+  fadeUnpackCanvasGroupDuration: 0.25
+  yOffsetPerSummaryRow: 200
+  minSummaryShowingTime: 1
+  summaryUIPrefab: {fileID: 5005710515507883679, guid: 73ee80b56a180423e9c0e0d3e68f071a, type: 3}
+  tapToContinueCTAPrefab: {fileID: 4052639719669576366, guid: 432c17095910445668ab728c121a8c1b, type: 3}
+  hasShown: 0

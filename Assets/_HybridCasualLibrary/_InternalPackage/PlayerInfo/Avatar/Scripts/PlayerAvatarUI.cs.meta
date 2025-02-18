@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 957b6d8f266ac468abe40f6049bd83a3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_AvatarImage: {instanceID: 0}
+  - m_FrameImage: {instanceID: 0}
+  - m_AvatarManagerSO: {fileID: 11400000, guid: e11fad37863d0414798e59c51b1a4631, type: 2}
+  - m_FrameManagerSO: {fileID: 11400000, guid: 65090f0cb0b414a3ea752781d6b60d63, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

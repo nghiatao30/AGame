@@ -1,0 +1,4680 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfd455f44e3a442eac8ee23f60b2e81, type: 3}
+  m_Name: NationalFlagManagerSO
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: 71ad1c5b413014bc1a4ec9f8b8c6f08b, type: 3}
+    - {fileID: 21300000, guid: 7e8ddcb4d6b5e4295b60b60b0a06a160, type: 3}
+    - {fileID: 21300000, guid: 650e42160f1a94d2e966a333df33ee8c, type: 3}
+    - {fileID: 21300000, guid: efb049cd7ca6748638f651d88980a2d5, type: 3}
+    - {fileID: 21300000, guid: a620afefc7fe04afba76fa66c3f0166b, type: 3}
+    - {fileID: 21300000, guid: be2a88df4dd954d93beaa698b2ed9e9a, type: 3}
+    - {fileID: 21300000, guid: dfc2cd33e4aac4030b59604caad40a1e, type: 3}
+    - {fileID: 21300000, guid: ab071c86a6a4d4b0bb9b8fdbb2869fc7, type: 3}
+    - {fileID: 21300000, guid: c85e734844ec84c03a1302c58bd2b3d2, type: 3}
+    - {fileID: 21300000, guid: b0b134aa83f3f47eba020774ac0a3d9b, type: 3}
+    - {fileID: 21300000, guid: f7fc77e463f0242e3805026d84304d4d, type: 3}
+    - {fileID: 21300000, guid: 3781337ff57ba45a19e7da5d3a6dbec6, type: 3}
+    - {fileID: 21300000, guid: bd68db15a042848f5be5eca7da77d340, type: 3}
+    - {fileID: 21300000, guid: c76d07d8a7b2d43d5838daca648bfe35, type: 3}
+    - {fileID: 21300000, guid: eb1e632a0c0414ef5862b1277ad9c567, type: 3}
+    - {fileID: 21300000, guid: fd191e50066434f0b8c282391cba08a8, type: 3}
+    - {fileID: 21300000, guid: a30a05af533954e658b975fd4beeeefa, type: 3}
+    - {fileID: 21300000, guid: d5d2920acb0bd415aa6da65aac389a0b, type: 3}
+    - {fileID: 21300000, guid: 51b8202befd7b482b96f2f04daa45535, type: 3}
+    - {fileID: 21300000, guid: 82344f1ebe36b4ab2a7d599fab35c3a0, type: 3}
+    - {fileID: 21300000, guid: e5360803b766e4facb0d810493c722bf, type: 3}
+    - {fileID: 21300000, guid: 95436855d84254c3dab031f1d13a9f83, type: 3}
+    - {fileID: 21300000, guid: b24f21d6c4f214e819b8a599ea92d502, type: 3}
+    - {fileID: 21300000, guid: 4c74862329649438ab75e48e651ecacb, type: 3}
+    - {fileID: 21300000, guid: 1be46163a0d114946ba96d1d5f671276, type: 3}
+    - {fileID: 21300000, guid: 72223b585c4684987b4bafc558784504, type: 3}
+    - {fileID: 21300000, guid: b928bfb814392489394797a3e28769d1, type: 3}
+    - {fileID: 21300000, guid: e706374acd9974761bb544988f173a06, type: 3}
+    - {fileID: 21300000, guid: e747537cb213c49149af02db3923611b, type: 3}
+    - {fileID: 21300000, guid: 5a22063479e964014aba8fbb3805231f, type: 3}
+    - {fileID: 21300000, guid: 52f98f8686dcc497292bac155d196cc5, type: 3}
+    - {fileID: 21300000, guid: 4d0b22a8862da46eb8b2fef60010f9e6, type: 3}
+    - {fileID: 21300000, guid: 2816dacde12654c60a4d4d22959f1f17, type: 3}
+    - {fileID: 21300000, guid: 00a2ea45dac184ff58d6520807d0d0da, type: 3}
+    - {fileID: 21300000, guid: 1ca7fe17fee4e48128b864e6c03c6105, type: 3}
+    - {fileID: 21300000, guid: 0c0ed1f3651b1444b97cf32df12f70a2, type: 3}
+    - {fileID: 21300000, guid: 85c53f80955a44e39ac8de1b09514f01, type: 3}
+    - {fileID: 21300000, guid: 0b00682316c3840f1b1e346cc82a5a8e, type: 3}
+    - {fileID: 21300000, guid: 2155dc08a199f40d39e3b0d4ad08d7a8, type: 3}
+    - {fileID: 21300000, guid: 645b6389fe537485b98d86c84afe7087, type: 3}
+    - {fileID: 21300000, guid: ba62e1bf7fb6148f481325ffd391af3b, type: 3}
+    - {fileID: 21300000, guid: 2d014a389eee041138259cf042c0216d, type: 3}
+    - {fileID: 21300000, guid: e001bc062e2da4eebaaf4610843d8462, type: 3}
+    - {fileID: 21300000, guid: cc725d19c04684cfbb8969b840ad6e37, type: 3}
+    - {fileID: 21300000, guid: 41f47a01acc604c8dbac662256535035, type: 3}
+    - {fileID: 21300000, guid: 49139157c09a74ab392f10d7786b8b06, type: 3}
+    - {fileID: 21300000, guid: d6c311e3c8cbc4a09be684008b3659bb, type: 3}
+    - {fileID: 21300000, guid: 33c87cd20c8ba4d5c8de28a81148a7c0, type: 3}
+    - {fileID: 21300000, guid: f9a1fbbb5e9d745458850300076f67a7, type: 3}
+    - {fileID: 21300000, guid: 38ed66b082551445eac3857b029c9559, type: 3}
+    - {fileID: 21300000, guid: 2129ac8efd1e1405eacd6ed3dbe6fe11, type: 3}
+    - {fileID: 21300000, guid: abe3ba87003e346ca9e2d0bab0149210, type: 3}
+    - {fileID: 21300000, guid: 5b8d13f2803d84ecb83ee55bc62eba16, type: 3}
+    - {fileID: 21300000, guid: ad09735b6184a477089119d04aa9882d, type: 3}
+    - {fileID: 21300000, guid: d09fa1bc4927b45338515ea8bf4fee29, type: 3}
+    - {fileID: 21300000, guid: 752b657441b6c400ead7ee1b7705c675, type: 3}
+    - {fileID: 21300000, guid: 9eefe45db2161497981a7ffcf761751f, type: 3}
+    - {fileID: 21300000, guid: 2ddf93629aea14e4b97dffea6adb16f6, type: 3}
+    - {fileID: 21300000, guid: cbd4a907f0f5b4a9a932ece621f7c448, type: 3}
+    - {fileID: 21300000, guid: 4c7d7c2b2ce9e4e64b878c06983027b8, type: 3}
+    - {fileID: 21300000, guid: a93760f6938cd49a1ae0edcb7556ab2f, type: 3}
+    - {fileID: 21300000, guid: 0da56e1f354454f728cfa5b5f4c5ddd8, type: 3}
+    - {fileID: 21300000, guid: a780c3dc56d874f159f9d490ce39ddcf, type: 3}
+    - {fileID: 21300000, guid: c8c9bd6e39f784254bc89b76da0fae65, type: 3}
+    - {fileID: 21300000, guid: ceeabeb9c421f4561bcd6b121a37ed02, type: 3}
+    - {fileID: 21300000, guid: 76f660c16054e456fb4bd003c07028ba, type: 3}
+    - {fileID: 21300000, guid: 173bf4e1543004a669f62c28e81375a5, type: 3}
+    - {fileID: 21300000, guid: 8b54505a2c9ec49f5be2ed38d3c9a9e0, type: 3}
+    - {fileID: 21300000, guid: 9fcce0a76994e47f6bdc651612cdc99f, type: 3}
+    - {fileID: 21300000, guid: eac49567a5d36452da90dbb9aa0866be, type: 3}
+    - {fileID: 21300000, guid: e277b16ceb4464d54b89947405e19339, type: 3}
+    - {fileID: 21300000, guid: b063b55ddb64949a3955e3f0f4a8bce6, type: 3}
+    - {fileID: 21300000, guid: b6fcbea84be30485a952f1691cc081c9, type: 3}
+    - {fileID: 21300000, guid: 67f037a7d381e4040847fa674242b364, type: 3}
+    - {fileID: 21300000, guid: f5e688de6657144d1b77c7556226bf5e, type: 3}
+    - {fileID: 21300000, guid: 5a7c56053c58e4bad9014170374690e0, type: 3}
+    - {fileID: 21300000, guid: e2a8af7aed736468999e5313c873e5b8, type: 3}
+    - {fileID: 21300000, guid: 13a6a9c817cb5451b9b0a6fbfbab5288, type: 3}
+    - {fileID: 21300000, guid: 276a4c4736e3e46179e3d16d82d4e8c1, type: 3}
+    - {fileID: 21300000, guid: 5089e362499b94b4f8452bc66507e066, type: 3}
+    - {fileID: 21300000, guid: 5b3982b8b8a6343cb83db737b1da069e, type: 3}
+    - {fileID: 21300000, guid: 441f69d204e904fd1aae93faf8efb43f, type: 3}
+    - {fileID: 21300000, guid: a3e4492b8f53c4e2e9373f1e9db4de58, type: 3}
+    - {fileID: 21300000, guid: a1900bd5183d34fc3a77b0acae257219, type: 3}
+    - {fileID: 21300000, guid: cd639f38f03654b82bec7cf1bec15f8e, type: 3}
+    - {fileID: 21300000, guid: df3e44d49a72c43818757094159ba838, type: 3}
+    - {fileID: 21300000, guid: 895ee962d1bc0469fbe1d83561bb3c78, type: 3}
+    - {fileID: 21300000, guid: d65d4128a24bc44c9a196b746c4477b3, type: 3}
+    - {fileID: 21300000, guid: cd1357620f410466cb8e5c506ffb7e25, type: 3}
+    - {fileID: 21300000, guid: 17ab08592477e4a87a0921510e3b0426, type: 3}
+    - {fileID: 21300000, guid: 3ad97cf73502a449ebb1cb7bfb007b5d, type: 3}
+    - {fileID: 21300000, guid: be734842342ac4233889278b91c53698, type: 3}
+    - {fileID: 21300000, guid: 2e3a55107f79a4882ad2d8dbef7be4b7, type: 3}
+    - {fileID: 21300000, guid: aec4b7ab0c1074171b8fd0d3c3b8ef49, type: 3}
+    - {fileID: 21300000, guid: b3e39812d798f410d8a0e819145aa375, type: 3}
+    - {fileID: 21300000, guid: 86130abfd174e4bb1b0c72a3f14ad09b, type: 3}
+    - {fileID: 21300000, guid: 4e910ef51036b4ee79543fd613c1f233, type: 3}
+    - {fileID: 21300000, guid: 89a97d5e7303546f59242345a45e0b86, type: 3}
+    - {fileID: 21300000, guid: 84889bcb4ea094c279d7fe011b2892f9, type: 3}
+    - {fileID: 21300000, guid: e481965b084c548bfa03d12dd641b38b, type: 3}
+    - {fileID: 21300000, guid: e83dbc0ff19604b20844b5001cc4e30e, type: 3}
+    - {fileID: 21300000, guid: 26dd8735c79cf4a86a2b12bc1035bea6, type: 3}
+    - {fileID: 21300000, guid: 008d41ea3fad8481dab90af29930e31c, type: 3}
+    - {fileID: 21300000, guid: 7f0d21b1a405245768dc3e3a4cb6a1ec, type: 3}
+    - {fileID: 21300000, guid: c42c6bfef90e8422fb8de009ae88a1da, type: 3}
+    - {fileID: 21300000, guid: 6eed870f7cc4e4967b9779f6286751bf, type: 3}
+    - {fileID: 21300000, guid: 7ded877e853654335922539282cc94a9, type: 3}
+    - {fileID: 21300000, guid: c954a96720951454194953d6e084349a, type: 3}
+    - {fileID: 21300000, guid: 1eab2610d2a3944ae9c061da79f93f08, type: 3}
+    - {fileID: 21300000, guid: 9785d7a2503ad467dbb26c25dbe87114, type: 3}
+    - {fileID: 21300000, guid: 71c280360fd944c49855517d933275d2, type: 3}
+    - {fileID: 21300000, guid: b235a525aec4943a993e536f33c64424, type: 3}
+    - {fileID: 21300000, guid: e2786997c9eb044d091a35de7c15f639, type: 3}
+    - {fileID: 21300000, guid: 3ac47954b96004fe39687fc6900afa8c, type: 3}
+    - {fileID: 21300000, guid: 75ddb793be22b42b8ab0f20aefb86f93, type: 3}
+    - {fileID: 21300000, guid: 14827110cdeec440eaac8c25ff6b0378, type: 3}
+    - {fileID: 21300000, guid: a212818782b1d44529bfb058aa7e6a53, type: 3}
+    - {fileID: 21300000, guid: 5cafa9476cb134f57bc28feca240c1e1, type: 3}
+    - {fileID: 21300000, guid: a4435ef45d569437e8cece3ede665a9e, type: 3}
+    - {fileID: 21300000, guid: f854b303b9bfe4bd5903add23074ccaf, type: 3}
+    - {fileID: 21300000, guid: 6eba4dfd4e4c3429cb6e7c27ccce4851, type: 3}
+    - {fileID: 21300000, guid: 4b2ed7031b0e24c58aa8ac8784ed077b, type: 3}
+    - {fileID: 21300000, guid: 2dd5ae52b5b844db186128fbc5bc2af6, type: 3}
+    - {fileID: 21300000, guid: ace0c39a05ba14332ab1cb7a395cf3e3, type: 3}
+    - {fileID: 21300000, guid: 52564a4020e284aba88fc243c9e2be78, type: 3}
+    - {fileID: 21300000, guid: 853b7c0b5615b43ddb3e651762424bdf, type: 3}
+    - {fileID: 21300000, guid: 196a66937a40d4b5ab07d257f285d8f1, type: 3}
+    - {fileID: 21300000, guid: 62c660ec63975410cb61f7f447b86fc1, type: 3}
+    - {fileID: 21300000, guid: b8e3ac3d37e2e4caf803333ebe15b5e7, type: 3}
+    - {fileID: 21300000, guid: df2a14779c72149a4971994c047ab6a8, type: 3}
+    - {fileID: 21300000, guid: 1d1edbc7019ad482fb3c72af59254810, type: 3}
+    - {fileID: 21300000, guid: ffbd4d917aa214a0589962806bdc5fbd, type: 3}
+    - {fileID: 21300000, guid: d01674a35cf7d45cd9e636ddfe2dc53f, type: 3}
+    - {fileID: 21300000, guid: 96744af3923f14ad990f81aa045cfebe, type: 3}
+    - {fileID: 21300000, guid: 1a7ee0b13ef754f3aa281ba348801bc7, type: 3}
+    - {fileID: 21300000, guid: d927e2d65f94a4bbd94a3a7618a09af9, type: 3}
+    - {fileID: 21300000, guid: 1f40dd3a5e99b4a78aee7a3412cee614, type: 3}
+    - {fileID: 21300000, guid: 041563b05cbd04e51badb65ca8dd66ec, type: 3}
+    - {fileID: 21300000, guid: b902fb5fb0ebc4d048efa36fbed05200, type: 3}
+    - {fileID: 21300000, guid: f1e19c4d363264f08abdbf6d751fb08f, type: 3}
+    - {fileID: 21300000, guid: 4f86aa509b1fa490eaf40fe0169977e3, type: 3}
+    - {fileID: 21300000, guid: f4621e05eaaad4a169986968da24b607, type: 3}
+    - {fileID: 21300000, guid: 9cb28bd4c538344a4b2211d8cdc14f45, type: 3}
+    - {fileID: 21300000, guid: 5e738db847353462dbc0260093c047fb, type: 3}
+    - {fileID: 21300000, guid: 84fd88d62067b4d449c9c4150daac294, type: 3}
+    - {fileID: 21300000, guid: cd888eae2e10f436f953cc7472e47b3f, type: 3}
+    - {fileID: 21300000, guid: c35d2cfa7f72b4171952443257a5029b, type: 3}
+    - {fileID: 21300000, guid: 799cb121c33bd4b7fa958c0bb5326460, type: 3}
+    - {fileID: 21300000, guid: 8e4a6d2760efb46709fb71b52a16d9cb, type: 3}
+    - {fileID: 21300000, guid: e07d9fb8d9fea43909143d29e5619cf1, type: 3}
+    - {fileID: 21300000, guid: 9fba6e5e778ec458985cfb89e30216a5, type: 3}
+    - {fileID: 21300000, guid: a8da91e8f66dc449da47919c4f19b04c, type: 3}
+    - {fileID: 21300000, guid: 7dce81aaa4fa44ebabade24dd5fc6404, type: 3}
+    - {fileID: 21300000, guid: 76482b16bfbab4a1fbb1890d798d670c, type: 3}
+    - {fileID: 21300000, guid: 92322becb8ebb4a748b49ece10dc6103, type: 3}
+    - {fileID: 21300000, guid: ea3f425552728419b9c33075567e7977, type: 3}
+    - {fileID: 21300000, guid: 71ad2911ea478434c864a95902208b70, type: 3}
+    - {fileID: 21300000, guid: d30827c505b3f4109b9a035d352851ce, type: 3}
+    - {fileID: 21300000, guid: d3189a6c4882149428f00d1997036c63, type: 3}
+    - {fileID: 21300000, guid: 654b375f87b7e4ca5b01193ca0617634, type: 3}
+    - {fileID: 21300000, guid: c3c12caf8d80c4c42b373b917ca5355f, type: 3}
+    - {fileID: 21300000, guid: 12d7538bd4a8a4dd18082e250bd420d3, type: 3}
+    - {fileID: 21300000, guid: 096677fd669944a45b57fe875e96eba4, type: 3}
+    - {fileID: 21300000, guid: b79adc694c302464cbc1e5e4d174d2fa, type: 3}
+    - {fileID: 21300000, guid: 12bbe14f2c7f244b1b324a9e12fa86bf, type: 3}
+    - {fileID: 21300000, guid: 4affc693a074e400ea7e570df3a2ead1, type: 3}
+    - {fileID: 21300000, guid: aa1886cf4be0d4d2d909d07b09e1e478, type: 3}
+    - {fileID: 21300000, guid: 0f248929d26d64d6494925852573db5d, type: 3}
+    - {fileID: 21300000, guid: c9a284510e9fc456f92ddacc0f4b97e2, type: 3}
+    - {fileID: 21300000, guid: 7c9cdcabcf5b34e57bcf7585735c59f4, type: 3}
+    - {fileID: 21300000, guid: 14d77dbfe63f34a548ef2c6890567a22, type: 3}
+    - {fileID: 21300000, guid: 1e561e19570094d3f98aa3cbbcad406d, type: 3}
+    - {fileID: 21300000, guid: efac4191e967644119c9777011c2d51e, type: 3}
+    - {fileID: 21300000, guid: bb6506c96ccbb4923822e4fefe8f4a1d, type: 3}
+    - {fileID: 21300000, guid: 55f34060f842d48f9832b9a5ab6c8f75, type: 3}
+    - {fileID: 21300000, guid: a670f29b87de44b39bda09810ed2cbfa, type: 3}
+    - {fileID: 21300000, guid: f90b7615df1d3453798663e25cb22319, type: 3}
+    - {fileID: 21300000, guid: cab357011053c4df9bcbf6d785e06778, type: 3}
+    - {fileID: 21300000, guid: 2f67b5b87cc2c4324a3391a473c34aa1, type: 3}
+    - {fileID: 21300000, guid: f3cc3d588e86445aa95c2f3a342c4968, type: 3}
+    - {fileID: 21300000, guid: 73f04d57f4bac43cdbd214babd917ff5, type: 3}
+    - {fileID: 21300000, guid: 0a471c33d47b24defa3cbd6525152d62, type: 3}
+    - {fileID: 21300000, guid: 93718b80e0c4c429081ac8a015bf58ca, type: 3}
+    - {fileID: 21300000, guid: 54164a6c9ce194ee880abb1296cfe081, type: 3}
+    - {fileID: 21300000, guid: bd3a7527f2e2447aaa83c6422bea15c4, type: 3}
+    - {fileID: 21300000, guid: b5e23ece4980f48a685b3fb785a837c4, type: 3}
+    - {fileID: 21300000, guid: 2664b2a0277064b6893252603190079e, type: 3}
+    - {fileID: 21300000, guid: fe8c567b64bad4fac81c9691f6ae20c4, type: 3}
+    - {fileID: 21300000, guid: 834fedcb82d0b432989e970acb716b40, type: 3}
+    - {fileID: 21300000, guid: 4b20a99f544ea47afa2035b4734504c1, type: 3}
+    - {fileID: 21300000, guid: 161e2c69162bd4675bbf76db5db2bf13, type: 3}
+    - {fileID: 21300000, guid: bb019d8352bb74b81910f8ccb5ddb7c7, type: 3}
+    - {fileID: 21300000, guid: 86335591652ea4a24855be507a2b9796, type: 3}
+    - {fileID: 21300000, guid: d873bed3915a14dcbbfa13eec0a8341f, type: 3}
+    - {fileID: 21300000, guid: 80a0858ea8e50485e8c052d99b388d7b, type: 3}
+    - {fileID: 21300000, guid: 53ace4d06c5f145e8a72c01882f0b065, type: 3}
+    - {fileID: 21300000, guid: c786ab9579fd142419547203c4c74f79, type: 3}
+    - {fileID: 21300000, guid: 338d3896eb1c74e40a1c59bd8541b78c, type: 3}
+    - {fileID: 21300000, guid: 484549a2a1aef464db56faff747dd195, type: 3}
+    - {fileID: 21300000, guid: 5013d96c163ad4dae90ad86f7a6c8777, type: 3}
+    - {fileID: 21300000, guid: 80dfe9715669c4f4d9a518a1b14d23ec, type: 3}
+    - {fileID: 21300000, guid: e4e60fa6699f24e73a332cbd7f1a877e, type: 3}
+    - {fileID: 21300000, guid: e3726874a346d4089950200a2d5b4bd8, type: 3}
+    - {fileID: 21300000, guid: bc3db1af5e3384b9eb8e43013d678bbe, type: 3}
+    - {fileID: 21300000, guid: 39d9304f9874a4c99a72c568cfff704b, type: 3}
+    - {fileID: 21300000, guid: ca21c9d042d164bc792b9f44b50ae363, type: 3}
+    - {fileID: 21300000, guid: 352e320f5e18e414eab4a6329fbe0b82, type: 3}
+    - {fileID: 21300000, guid: 8214ed3d925284450b9b30e45303f7a2, type: 3}
+    - {fileID: 21300000, guid: 20b9e4590cba8402189b002b591880a5, type: 3}
+    - {fileID: 21300000, guid: c790a5162cf224650b8974b85ad1745d, type: 3}
+    - {fileID: 21300000, guid: 95de40ad1c81c4b2287039a0e3413ac9, type: 3}
+    - {fileID: 21300000, guid: 4a57da0fa37424b2c98e92a176f22029, type: 3}
+    - {fileID: 21300000, guid: 11e414f6852304af18c6f4902e59a989, type: 3}
+    - {fileID: 21300000, guid: 42be3ac0870f14cf9a656e66d6608c21, type: 3}
+    - {fileID: 21300000, guid: a96f55f38aa9e4041bedaf1ec56d0e3c, type: 3}
+    - {fileID: 21300000, guid: cc3e1dcea96f54b30b9b0f636ba7e536, type: 3}
+    - {fileID: 21300000, guid: 7843c603b9e87433482fa5a183cefefa, type: 3}
+    - {fileID: 21300000, guid: 71ee80b62b080449787d6296aab25dec, type: 3}
+    - {fileID: 21300000, guid: 41b4e1b6a8fcf433d8d0c4857a31a3ea, type: 3}
+    - {fileID: 21300000, guid: 3a046bd09f373403396ddc4f61c5cce6, type: 3}
+    - {fileID: 21300000, guid: c4231de7ad9f94655a9366127064bd46, type: 3}
+    - {fileID: 21300000, guid: 70aab61532d8041afa460672a3442c9a, type: 3}
+    - {fileID: 21300000, guid: 07f47ab97315348abb2c26ccf401f045, type: 3}
+    - {fileID: 21300000, guid: 5c7f8d616a3a74218bc540f0e09fb4e4, type: 3}
+    - {fileID: 21300000, guid: 8f83ab79bb56e48abbbeb0a012911762, type: 3}
+    - {fileID: 21300000, guid: 7d90a8dc2ccaf45f79d9e3284136a09f, type: 3}
+    - {fileID: 21300000, guid: 956a4409a8ad64f8d8b07c1d2c22de6c, type: 3}
+    - {fileID: 21300000, guid: 1b2420ebc92f0484cb9622bbd1231333, type: 3}
+    - {fileID: 21300000, guid: f4eded8251256483da9f52e7906d542c, type: 3}
+    - {fileID: 21300000, guid: c1bfa005f700948f3960336f7c48502d, type: 3}
+    - {fileID: 21300000, guid: e59b73d6abd2f4908963f130df00a329, type: 3}
+    - {fileID: 21300000, guid: 049da6a4686cc4050bf0cc21331e8720, type: 3}
+    - {fileID: 21300000, guid: 6bb80db3ecaf34ae7b0b32eb1d4ea3aa, type: 3}
+    - {fileID: 21300000, guid: 003078e9ed18444558750e0b1c749661, type: 3}
+    - {fileID: 21300000, guid: d6d2795ffd36c4e7cbf445e6baae5913, type: 3}
+    - {fileID: 21300000, guid: 7d3a9d9d81e1743d8b5527d699a2b9b7, type: 3}
+    - {fileID: 21300000, guid: 8d7a81df7415448a09ad72192feb7c0b, type: 3}
+    - {fileID: 21300000, guid: 4d7cbdc9232d64f57a41dd14bde1b5a3, type: 3}
+    - {fileID: 21300000, guid: 80b83e75c3d0f4f01afe1bf4205611b4, type: 3}
+    - {fileID: 21300000, guid: be7abe7fb6c1542078895aec08c68035, type: 3}
+    - {fileID: 21300000, guid: 310e60d6217ab4c259edd6ee244d07eb, type: 3}
+    - {fileID: 21300000, guid: be053e8080f37488aa6e1aabe94d5a3d, type: 3}
+    - {fileID: 21300000, guid: dbb086c52d67042a984ba386cc1a4731, type: 3}
+    - {fileID: 21300000, guid: 5c6bde575be224e54802ae869bd3348e, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_CountryInfoDictionary
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[NationalFlagManagerSO+CountryInfo,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 244
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: US
+    - Name: $v
+      Entry: 7
+      Data: 2|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VN
+    - Name: $v
+      Entry: 7
+      Data: 3|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CN
+    - Name: $v
+      Entry: 7
+      Data: 4|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GB
+    - Name: $v
+      Entry: 7
+      Data: 5|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: JP
+    - Name: $v
+      Entry: 7
+      Data: 6|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KR
+    - Name: $v
+      Entry: 7
+      Data: 7|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FR
+    - Name: $v
+      Entry: 7
+      Data: 8|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: RU
+    - Name: $v
+      Entry: 7
+      Data: 9|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PH
+    - Name: $v
+      Entry: 7
+      Data: 10|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IN
+    - Name: $v
+      Entry: 7
+      Data: 11|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AF
+    - Name: $v
+      Entry: 7
+      Data: 12|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AX
+    - Name: $v
+      Entry: 7
+      Data: 13|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AL
+    - Name: $v
+      Entry: 7
+      Data: 14|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DZ
+    - Name: $v
+      Entry: 7
+      Data: 15|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AS
+    - Name: $v
+      Entry: 7
+      Data: 16|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AD
+    - Name: $v
+      Entry: 7
+      Data: 17|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AO
+    - Name: $v
+      Entry: 7
+      Data: 18|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AI
+    - Name: $v
+      Entry: 7
+      Data: 19|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AG
+    - Name: $v
+      Entry: 7
+      Data: 20|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AR
+    - Name: $v
+      Entry: 7
+      Data: 21|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AM
+    - Name: $v
+      Entry: 7
+      Data: 22|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AW
+    - Name: $v
+      Entry: 7
+      Data: 23|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 21
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AU
+    - Name: $v
+      Entry: 7
+      Data: 24|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 22
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AT
+    - Name: $v
+      Entry: 7
+      Data: 25|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AZ
+    - Name: $v
+      Entry: 7
+      Data: 26|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 24
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BS
+    - Name: $v
+      Entry: 7
+      Data: 27|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BH
+    - Name: $v
+      Entry: 7
+      Data: 28|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 26
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BD
+    - Name: $v
+      Entry: 7
+      Data: 29|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 27
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BB
+    - Name: $v
+      Entry: 7
+      Data: 30|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 28
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BY
+    - Name: $v
+      Entry: 7
+      Data: 31|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 29
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BE
+    - Name: $v
+      Entry: 7
+      Data: 32|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BZ
+    - Name: $v
+      Entry: 7
+      Data: 33|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 31
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BJ
+    - Name: $v
+      Entry: 7
+      Data: 34|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BM
+    - Name: $v
+      Entry: 7
+      Data: 35|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 33
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BT
+    - Name: $v
+      Entry: 7
+      Data: 36|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 34
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BO
+    - Name: $v
+      Entry: 7
+      Data: 37|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 35
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BA
+    - Name: $v
+      Entry: 7
+      Data: 38|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 36
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BW
+    - Name: $v
+      Entry: 7
+      Data: 39|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 37
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BV
+    - Name: $v
+      Entry: 7
+      Data: 40|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 38
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BR
+    - Name: $v
+      Entry: 7
+      Data: 41|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 39
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IO
+    - Name: $v
+      Entry: 7
+      Data: 42|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BN
+    - Name: $v
+      Entry: 7
+      Data: 43|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 41
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BG
+    - Name: $v
+      Entry: 7
+      Data: 44|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 42
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BF
+    - Name: $v
+      Entry: 7
+      Data: 45|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 43
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BI
+    - Name: $v
+      Entry: 7
+      Data: 46|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 44
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CV
+    - Name: $v
+      Entry: 7
+      Data: 47|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KH
+    - Name: $v
+      Entry: 7
+      Data: 48|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 46
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CM
+    - Name: $v
+      Entry: 7
+      Data: 49|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 47
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CA
+    - Name: $v
+      Entry: 7
+      Data: 50|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 48
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KY
+    - Name: $v
+      Entry: 7
+      Data: 51|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 49
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CF
+    - Name: $v
+      Entry: 7
+      Data: 52|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 50
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TD
+    - Name: $v
+      Entry: 7
+      Data: 53|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 51
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CL
+    - Name: $v
+      Entry: 7
+      Data: 54|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 52
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CX
+    - Name: $v
+      Entry: 7
+      Data: 55|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 53
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CC
+    - Name: $v
+      Entry: 7
+      Data: 56|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 54
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CO
+    - Name: $v
+      Entry: 7
+      Data: 57|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 55
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KM
+    - Name: $v
+      Entry: 7
+      Data: 58|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CG
+    - Name: $v
+      Entry: 7
+      Data: 59|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 57
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CD
+    - Name: $v
+      Entry: 7
+      Data: 60|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 58
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CK
+    - Name: $v
+      Entry: 7
+      Data: 61|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 59
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CR
+    - Name: $v
+      Entry: 7
+      Data: 62|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 60
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CI
+    - Name: $v
+      Entry: 7
+      Data: 63|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 61
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HR
+    - Name: $v
+      Entry: 7
+      Data: 64|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 62
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CU
+    - Name: $v
+      Entry: 7
+      Data: 65|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 63
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CW
+    - Name: $v
+      Entry: 7
+      Data: 66|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 64
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CY
+    - Name: $v
+      Entry: 7
+      Data: 67|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 65
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CZ
+    - Name: $v
+      Entry: 7
+      Data: 68|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 66
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DK
+    - Name: $v
+      Entry: 7
+      Data: 69|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 67
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DJ
+    - Name: $v
+      Entry: 7
+      Data: 70|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 68
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DM
+    - Name: $v
+      Entry: 7
+      Data: 71|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 69
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: EC
+    - Name: $v
+      Entry: 7
+      Data: 72|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 70
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: EG
+    - Name: $v
+      Entry: 7
+      Data: 73|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 71
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SV
+    - Name: $v
+      Entry: 7
+      Data: 74|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 72
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GQ
+    - Name: $v
+      Entry: 7
+      Data: 75|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 73
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ER
+    - Name: $v
+      Entry: 7
+      Data: 76|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 74
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: EE
+    - Name: $v
+      Entry: 7
+      Data: 77|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 75
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ET
+    - Name: $v
+      Entry: 7
+      Data: 78|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FK
+    - Name: $v
+      Entry: 7
+      Data: 79|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 77
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FO
+    - Name: $v
+      Entry: 7
+      Data: 80|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 78
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FJ
+    - Name: $v
+      Entry: 7
+      Data: 81|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 79
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FI
+    - Name: $v
+      Entry: 7
+      Data: 82|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 80
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GF
+    - Name: $v
+      Entry: 7
+      Data: 83|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 81
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PF
+    - Name: $v
+      Entry: 7
+      Data: 84|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 82
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TF
+    - Name: $v
+      Entry: 7
+      Data: 85|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 83
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GA
+    - Name: $v
+      Entry: 7
+      Data: 86|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 84
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GM
+    - Name: $v
+      Entry: 7
+      Data: 87|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 85
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GE
+    - Name: $v
+      Entry: 7
+      Data: 88|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 86
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DE
+    - Name: $v
+      Entry: 7
+      Data: 89|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 87
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GH
+    - Name: $v
+      Entry: 7
+      Data: 90|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 88
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GI
+    - Name: $v
+      Entry: 7
+      Data: 91|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 89
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GR
+    - Name: $v
+      Entry: 7
+      Data: 92|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 90
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GL
+    - Name: $v
+      Entry: 7
+      Data: 93|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 91
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GD
+    - Name: $v
+      Entry: 7
+      Data: 94|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GP
+    - Name: $v
+      Entry: 7
+      Data: 95|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 93
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GU
+    - Name: $v
+      Entry: 7
+      Data: 96|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 94
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GT
+    - Name: $v
+      Entry: 7
+      Data: 97|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 95
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GG
+    - Name: $v
+      Entry: 7
+      Data: 98|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 96
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GN
+    - Name: $v
+      Entry: 7
+      Data: 99|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 97
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GW
+    - Name: $v
+      Entry: 7
+      Data: 100|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 98
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GY
+    - Name: $v
+      Entry: 7
+      Data: 101|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 99
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HT
+    - Name: $v
+      Entry: 7
+      Data: 102|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HM
+    - Name: $v
+      Entry: 7
+      Data: 103|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VA
+    - Name: $v
+      Entry: 7
+      Data: 104|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 102
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HN
+    - Name: $v
+      Entry: 7
+      Data: 105|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 103
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HK
+    - Name: $v
+      Entry: 7
+      Data: 106|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 104
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HU
+    - Name: $v
+      Entry: 7
+      Data: 107|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 105
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IS
+    - Name: $v
+      Entry: 7
+      Data: 108|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 106
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ID
+    - Name: $v
+      Entry: 7
+      Data: 109|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 107
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IR
+    - Name: $v
+      Entry: 7
+      Data: 110|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 108
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IQ
+    - Name: $v
+      Entry: 7
+      Data: 111|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 109
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IE
+    - Name: $v
+      Entry: 7
+      Data: 112|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 110
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IM
+    - Name: $v
+      Entry: 7
+      Data: 113|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 111
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IL
+    - Name: $v
+      Entry: 7
+      Data: 114|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 112
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IT
+    - Name: $v
+      Entry: 7
+      Data: 115|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 113
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: JM
+    - Name: $v
+      Entry: 7
+      Data: 116|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 114
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: JE
+    - Name: $v
+      Entry: 7
+      Data: 117|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 115
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: JO
+    - Name: $v
+      Entry: 7
+      Data: 118|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 116
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KZ
+    - Name: $v
+      Entry: 7
+      Data: 119|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 117
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KE
+    - Name: $v
+      Entry: 7
+      Data: 120|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 118
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KI
+    - Name: $v
+      Entry: 7
+      Data: 121|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 119
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KP
+    - Name: $v
+      Entry: 7
+      Data: 122|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 120
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KW
+    - Name: $v
+      Entry: 7
+      Data: 123|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 121
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KG
+    - Name: $v
+      Entry: 7
+      Data: 124|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 122
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LA
+    - Name: $v
+      Entry: 7
+      Data: 125|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 123
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LV
+    - Name: $v
+      Entry: 7
+      Data: 126|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 124
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LB
+    - Name: $v
+      Entry: 7
+      Data: 127|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 125
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LS
+    - Name: $v
+      Entry: 7
+      Data: 128|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 126
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LR
+    - Name: $v
+      Entry: 7
+      Data: 129|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 127
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LY
+    - Name: $v
+      Entry: 7
+      Data: 130|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 128
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LI
+    - Name: $v
+      Entry: 7
+      Data: 131|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 129
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LT
+    - Name: $v
+      Entry: 7
+      Data: 132|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 130
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LU
+    - Name: $v
+      Entry: 7
+      Data: 133|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 131
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MO
+    - Name: $v
+      Entry: 7
+      Data: 134|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 132
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MK
+    - Name: $v
+      Entry: 7
+      Data: 135|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 133
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MG
+    - Name: $v
+      Entry: 7
+      Data: 136|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 134
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MW
+    - Name: $v
+      Entry: 7
+      Data: 137|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 135
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MY
+    - Name: $v
+      Entry: 7
+      Data: 138|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 136
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MV
+    - Name: $v
+      Entry: 7
+      Data: 139|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 137
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ML
+    - Name: $v
+      Entry: 7
+      Data: 140|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 138
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MT
+    - Name: $v
+      Entry: 7
+      Data: 141|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 139
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MH
+    - Name: $v
+      Entry: 7
+      Data: 142|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 140
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MQ
+    - Name: $v
+      Entry: 7
+      Data: 143|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 141
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MR
+    - Name: $v
+      Entry: 7
+      Data: 144|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 142
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MU
+    - Name: $v
+      Entry: 7
+      Data: 145|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 143
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: YT
+    - Name: $v
+      Entry: 7
+      Data: 146|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 144
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MX
+    - Name: $v
+      Entry: 7
+      Data: 147|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 145
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FM
+    - Name: $v
+      Entry: 7
+      Data: 148|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 146
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MD
+    - Name: $v
+      Entry: 7
+      Data: 149|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 147
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MC
+    - Name: $v
+      Entry: 7
+      Data: 150|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 148
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MN
+    - Name: $v
+      Entry: 7
+      Data: 151|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 149
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ME
+    - Name: $v
+      Entry: 7
+      Data: 152|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 150
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MS
+    - Name: $v
+      Entry: 7
+      Data: 153|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 151
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MA
+    - Name: $v
+      Entry: 7
+      Data: 154|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 152
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MZ
+    - Name: $v
+      Entry: 7
+      Data: 155|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 153
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MM
+    - Name: $v
+      Entry: 7
+      Data: 156|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 154
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NA
+    - Name: $v
+      Entry: 7
+      Data: 157|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 155
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NR
+    - Name: $v
+      Entry: 7
+      Data: 158|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 156
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NP
+    - Name: $v
+      Entry: 7
+      Data: 159|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 157
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NL
+    - Name: $v
+      Entry: 7
+      Data: 160|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 158
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NC
+    - Name: $v
+      Entry: 7
+      Data: 161|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 159
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NZ
+    - Name: $v
+      Entry: 7
+      Data: 162|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 160
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NI
+    - Name: $v
+      Entry: 7
+      Data: 163|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 161
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NE
+    - Name: $v
+      Entry: 7
+      Data: 164|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 162
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NG
+    - Name: $v
+      Entry: 7
+      Data: 165|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 163
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NU
+    - Name: $v
+      Entry: 7
+      Data: 166|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 164
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NF
+    - Name: $v
+      Entry: 7
+      Data: 167|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 165
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MP
+    - Name: $v
+      Entry: 7
+      Data: 168|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 166
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: NO
+    - Name: $v
+      Entry: 7
+      Data: 169|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 167
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: OM
+    - Name: $v
+      Entry: 7
+      Data: 170|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 168
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PK
+    - Name: $v
+      Entry: 7
+      Data: 171|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 169
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PW
+    - Name: $v
+      Entry: 7
+      Data: 172|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 170
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PS
+    - Name: $v
+      Entry: 7
+      Data: 173|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 171
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PA
+    - Name: $v
+      Entry: 7
+      Data: 174|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 172
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PG
+    - Name: $v
+      Entry: 7
+      Data: 175|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 173
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PY
+    - Name: $v
+      Entry: 7
+      Data: 176|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 174
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PE
+    - Name: $v
+      Entry: 7
+      Data: 177|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 175
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PN
+    - Name: $v
+      Entry: 7
+      Data: 178|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 176
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PL
+    - Name: $v
+      Entry: 7
+      Data: 179|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 177
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PT
+    - Name: $v
+      Entry: 7
+      Data: 180|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 178
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PR
+    - Name: $v
+      Entry: 7
+      Data: 181|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 179
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: QA
+    - Name: $v
+      Entry: 7
+      Data: 182|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 180
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: RE
+    - Name: $v
+      Entry: 7
+      Data: 183|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 181
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: RO
+    - Name: $v
+      Entry: 7
+      Data: 184|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 182
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: RW
+    - Name: $v
+      Entry: 7
+      Data: 185|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 183
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BL
+    - Name: $v
+      Entry: 7
+      Data: 186|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 184
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SH
+    - Name: $v
+      Entry: 7
+      Data: 187|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 185
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KN
+    - Name: $v
+      Entry: 7
+      Data: 188|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 186
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LC
+    - Name: $v
+      Entry: 7
+      Data: 189|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 187
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: MF
+    - Name: $v
+      Entry: 7
+      Data: 190|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 188
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PM
+    - Name: $v
+      Entry: 7
+      Data: 191|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 189
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VC
+    - Name: $v
+      Entry: 7
+      Data: 192|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 190
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: WS
+    - Name: $v
+      Entry: 7
+      Data: 193|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 191
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SM
+    - Name: $v
+      Entry: 7
+      Data: 194|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 192
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ST
+    - Name: $v
+      Entry: 7
+      Data: 195|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 193
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SA
+    - Name: $v
+      Entry: 7
+      Data: 196|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 194
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SN
+    - Name: $v
+      Entry: 7
+      Data: 197|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 195
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: RS
+    - Name: $v
+      Entry: 7
+      Data: 198|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 196
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SC
+    - Name: $v
+      Entry: 7
+      Data: 199|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 197
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SL
+    - Name: $v
+      Entry: 7
+      Data: 200|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 198
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SG
+    - Name: $v
+      Entry: 7
+      Data: 201|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 199
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SX
+    - Name: $v
+      Entry: 7
+      Data: 202|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SK
+    - Name: $v
+      Entry: 7
+      Data: 203|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 201
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SI
+    - Name: $v
+      Entry: 7
+      Data: 204|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 202
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SB
+    - Name: $v
+      Entry: 7
+      Data: 205|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 203
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SO
+    - Name: $v
+      Entry: 7
+      Data: 206|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 204
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ZA
+    - Name: $v
+      Entry: 7
+      Data: 207|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 205
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GS
+    - Name: $v
+      Entry: 7
+      Data: 208|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 206
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SS
+    - Name: $v
+      Entry: 7
+      Data: 209|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 207
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ES
+    - Name: $v
+      Entry: 7
+      Data: 210|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 208
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LK
+    - Name: $v
+      Entry: 7
+      Data: 211|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 209
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SD
+    - Name: $v
+      Entry: 7
+      Data: 212|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 210
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SR
+    - Name: $v
+      Entry: 7
+      Data: 213|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 211
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SJ
+    - Name: $v
+      Entry: 7
+      Data: 214|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 212
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SZ
+    - Name: $v
+      Entry: 7
+      Data: 215|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 213
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SE
+    - Name: $v
+      Entry: 7
+      Data: 216|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 214
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CH
+    - Name: $v
+      Entry: 7
+      Data: 217|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 215
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SY
+    - Name: $v
+      Entry: 7
+      Data: 218|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 216
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TW
+    - Name: $v
+      Entry: 7
+      Data: 219|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 217
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TJ
+    - Name: $v
+      Entry: 7
+      Data: 220|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 218
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TZ
+    - Name: $v
+      Entry: 7
+      Data: 221|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 219
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TH
+    - Name: $v
+      Entry: 7
+      Data: 222|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 220
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TL
+    - Name: $v
+      Entry: 7
+      Data: 223|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 221
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TG
+    - Name: $v
+      Entry: 7
+      Data: 224|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 222
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TK
+    - Name: $v
+      Entry: 7
+      Data: 225|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 223
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TO
+    - Name: $v
+      Entry: 7
+      Data: 226|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 224
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TT
+    - Name: $v
+      Entry: 7
+      Data: 227|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 225
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TN
+    - Name: $v
+      Entry: 7
+      Data: 228|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 226
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TR
+    - Name: $v
+      Entry: 7
+      Data: 229|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 227
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TM
+    - Name: $v
+      Entry: 7
+      Data: 230|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 228
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TC
+    - Name: $v
+      Entry: 7
+      Data: 231|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 229
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TV
+    - Name: $v
+      Entry: 7
+      Data: 232|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 230
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: UG
+    - Name: $v
+      Entry: 7
+      Data: 233|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 231
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: UA
+    - Name: $v
+      Entry: 7
+      Data: 234|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 232
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AE
+    - Name: $v
+      Entry: 7
+      Data: 235|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 233
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: UY
+    - Name: $v
+      Entry: 7
+      Data: 236|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 234
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: UZ
+    - Name: $v
+      Entry: 7
+      Data: 237|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 235
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VU
+    - Name: $v
+      Entry: 7
+      Data: 238|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 236
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VE
+    - Name: $v
+      Entry: 7
+      Data: 239|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 237
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VG
+    - Name: $v
+      Entry: 7
+      Data: 240|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 238
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: VI
+    - Name: $v
+      Entry: 7
+      Data: 241|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 239
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: WF
+    - Name: $v
+      Entry: 7
+      Data: 242|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 240
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: YE
+    - Name: $v
+      Entry: 7
+      Data: 243|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 241
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ZM
+    - Name: $v
+      Entry: 7
+      Data: 244|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 242
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: ZW
+    - Name: $v
+      Entry: 7
+      Data: 245|NationalFlagManagerSO+CountryInfo, Assembly-CSharp
+    - Name: m_NationalFlag
+      Entry: 10
+      Data: 243
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_PlayerCountryCode: {fileID: 11400000, guid: c248b46510e0c424db9ba19dd0efb1b8, type: 2}

@@ -1,0 +1,2 @@
+LatteGames path finding dummy
+This file is to detect the whole package installation path

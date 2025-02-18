@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1345c21cbf44e83a7e6d2bb8360fcb, type: 3}
+  m_Name: GachaPackDatasheet
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: gachaPackEditorDataDictionary
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[GachaPackDatasheet+DataType,
+        Assembly-CSharp-Editor],[GachaPackDatasheet+GachaPackEditorData, Assembly-CSharp-Editor]],
+        mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[GachaPackDatasheet+DataType,
+        Assembly-CSharp-Editor]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 2|GachaPackDatasheet+GachaPackEditorData, Assembly-CSharp-Editor
+    - Name: <sheetID>k__BackingField
+      Entry: 1
+      Data: 646118054
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 3|GachaPackDatasheet+GachaPackEditorData, Assembly-CSharp-Editor
+    - Name: <sheetID>k__BackingField
+      Entry: 1
+      Data: 698049679
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_Mode: 1
+  m_SheetLocation:
+    m_RemotePath: https://docs.google.com/spreadsheets/d/109Ga0Lr4yVi8-hsZphhLXOAS_fE-1fAkNIBlNDp-3m4/export?format=csv&gid={sheetID}
+    m_LocalPath: Assets/_Sandbox/Editor/LocalCSV/GachaPacks/DesignDatasheet_{name}.csv
+  characterManagerSO: {fileID: 0}
+  gearManagerSOs: []
+  gachaPacks: []
+  gachaPacksCollections: []

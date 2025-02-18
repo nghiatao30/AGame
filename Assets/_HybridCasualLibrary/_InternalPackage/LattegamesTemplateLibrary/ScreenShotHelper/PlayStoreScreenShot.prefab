@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3036678025747514011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8826013009439546525}
+  - component: {fileID: 7721310201026372562}
+  m_Layer: 0
+  m_Name: PlayStoreScreenShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8826013009439546525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036678025747514011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7721310201026372562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036678025747514011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e725a816f4524f74fa1bd77d5ecd06ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenShotConfigurations:
+  - width: 1242
+    height: 2208
+    destinationFolder: /Users/ThuanHuynh/LatteGames/PocketFighter/Screenshot/1242x2208
+  - width: 1284
+    height: 2778
+    destinationFolder: /Users/ThuanHuynh/LatteGames/PocketFighter/Screenshot/1284x2778
+  - width: 2048
+    height: 2732
+    destinationFolder: /Users/ThuanHuynh/LatteGames/PocketFighter/Screenshot/2048x2732
+  - width: 925
+    height: 1907
+    destinationFolder: /Users/ThuanHuynh/LatteGames/PocketFighter/Screenshot/925x1907
+  captureKeyCode: 92
+  overcanvasPositionOffset: {x: 9999, y: 9999, z: 9999}

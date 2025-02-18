@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12323, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Lattegames_Color_Preset
+  m_EditorClassIdentifier: 
+  m_Presets:
+  - m_Name: Red
+    m_Color: {r: 0.9490196, g: 0.02745098, b: 0.3647059, a: 1}
+  - m_Name: RedPink
+    m_Color: {r: 0.98039216, g: 0.3254902, b: 0.52156866, a: 1}
+  - m_Name: PinkRed
+    m_Color: {r: 0.9490196, g: 0.25490198, b: 0.7647059, a: 1}
+  - m_Name: Pink
+    m_Color: {r: 0.9529412, g: 0.23529412, b: 0.9607843, a: 1}
+  - m_Name: PinkLight
+    m_Color: {r: 0.9490196, g: 0.4745098, b: 0.91764706, a: 1}
+  - m_Name: PurplePink
+    m_Color: {r: 0.7372549, g: 0.23921569, b: 0.9490196, a: 1}
+  - m_Name: Purple
+    m_Color: {r: 0.6313726, g: 0.15294118, b: 0.9490196, a: 1}
+  - m_Name: PurpleLight
+    m_Color: {r: 0.5882353, g: 0.3882353, b: 0.96862745, a: 1}
+  - m_Name: BlueLight
+    m_Color: {r: 0.42352942, g: 0.85882354, b: 0.95686275, a: 1}
+  - m_Name: BlueLight_2
+    m_Color: {r: 0.30588236, g: 0.8, b: 0.9607843, a: 1}
+  - m_Name: Blue
+    m_Color: {r: 0.23921569, g: 0.7490196, b: 0.9490196, a: 1}
+  - m_Name: BlueDark
+    m_Color: {r: 0.26666668, g: 0.65882355, b: 0.9490196, a: 1}
+  - m_Name: LimeGreen
+    m_Color: {r: 0.57254905, g: 0.9098039, b: 0.3137255, a: 1}
+  - m_Name: Green
+    m_Color: {r: 0.35686275, g: 0.9490196, b: 0.26666668, a: 1}
+  - m_Name: Yellow_1
+    m_Color: {r: 0.9490196, g: 0.8862745, b: 0.019607844, a: 1}
+  - m_Name: Yellow_2
+    m_Color: {r: 0.9529412, g: 0.8666667, b: 0, a: 1}
+  - m_Name: Orange_1
+    m_Color: {r: 0.9490196, g: 0.74509805, b: 0.13333334, a: 1}
+  - m_Name: Orange_2
+    m_Color: {r: 0.9647059, g: 0.74509805, b: 0.105882354, a: 1}
+  - m_Name: HumanSkin
+    m_Color: {r: 0.9490196, g: 0.67058825, b: 0.5686275, a: 1}

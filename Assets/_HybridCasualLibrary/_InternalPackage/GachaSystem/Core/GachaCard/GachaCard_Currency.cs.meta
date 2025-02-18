@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 188784643ac3e40a490e705ccccc87ed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gemManagerSO: {fileID: 11400000, guid: 1a03e35535005477893a2c75baacbc1e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

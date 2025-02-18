@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48f292971b614607b5a516ee96d5c67, type: 3}
+  m_Name: CurrencySO_RVTicket
+  m_EditorClassIdentifier: 
+  m_InitialValue: 0
+  m_Key: CurrencySO_RVTicket_55bdfb10d401c45889e5778eb49acc5a
+  icon: {fileID: 21300000, guid: 906cc49bff5a347dabbd60c182635dd2, type: 3}
+  emittedIcon: {fileID: 21300000, guid: 906cc49bff5a347dabbd60c182635dd2, type: 3}
+  currencyType: 3
+  spriteAssetID: RVTicket

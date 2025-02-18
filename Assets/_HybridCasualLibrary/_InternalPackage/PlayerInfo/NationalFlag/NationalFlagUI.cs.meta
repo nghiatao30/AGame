@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb88683719c8a47879cde5f42e51c79d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_CountryCodeVariable: {fileID: 11400000, guid: c248b46510e0c424db9ba19dd0efb1b8, type: 2}
+  - m_NationalFlagManagerSO: {fileID: 11400000, guid: 4d1f8dc70a8644ef4bc1a129e755a1d1, type: 2}
+  - m_NationalFlagImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

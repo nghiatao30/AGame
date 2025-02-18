@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4624015bde981453bbba5526a4bf1b16, type: 3}
+  m_Name: _AvatarManagerSO
+  m_EditorClassIdentifier: 
+  m_InitialValue:
+  - {fileID: 11400000, guid: 41fb290da32e84bfbb4102ac7c9bd400, type: 2}
+  m_ItemUsedEventCode:
+    m_EventType: 
+    m_EventCode: 
+  m_ItemSelectedEventCode:
+    m_EventType: 
+    m_EventCode: 
+  m_ItemUnlockedEventCode:
+    m_EventType: 
+    m_EventCode: 
+  m_DisplayNameTerm: 
+  m_AnalyticsName: Avatar
+  m_AdsLocation: 0
+  m_ResourceLocation: 0
+  m_CurrentItemInUse: {fileID: 11400000, guid: 10a81364af43a48e8a924f3d352e0c54, type: 2}

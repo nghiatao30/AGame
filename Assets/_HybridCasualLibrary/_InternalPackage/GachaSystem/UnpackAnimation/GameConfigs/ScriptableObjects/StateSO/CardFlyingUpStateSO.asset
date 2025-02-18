@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2316d3dd9348cbb317e129446f304, type: 3}
+  m_Name: CardFlyingUpStateSO
+  m_EditorClassIdentifier: 
+  m_guid: b552ea348ca30408eb162dfa8e22e689
+  transitions:
+  - {fileID: 11400000, guid: 51a8c848746fb4c49ba445b40f99e098, type: 2}
+  cardJumpOutDuration: 0.65
+  startYOffset: 680
+  cardFXPrefab: {fileID: 5128904709446905091, guid: 51b670207fcd4421380d6889162a434f,
+    type: 3}
+  delayToFirstOpenCard: 1.1
+  delayToOpenCard: 0.1

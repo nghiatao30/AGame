@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ff2244cec446145818f50768d10f2d, type: 3}
+  m_Name: I2LDatasheet
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_Mode: 1
+  m_SheetLocation:
+    m_RemotePath: https://docs.google.com/spreadsheets/d/18joiIXBg6xir70SeZdvhXXdzhEn4xLNjxzfW9hxh4QQ/export?format=csv
+    m_LocalPath: Assets/_Sandbox/Editor/LocalCSV/I2L/I2Localization.csv
+  m_I2LTermEnumScript: {fileID: 11500000, guid: 20924f2f5022a4636a513680de9b2ae7,
+    type: 3}

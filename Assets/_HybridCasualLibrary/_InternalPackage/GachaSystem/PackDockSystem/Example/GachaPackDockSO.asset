@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4993a6fe2914beab2c2af820020d79, type: 3}
+  m_Name: GachaPackDockSO
+  m_EditorClassIdentifier: 
+  m_guid: 515b4b1266ec9485d88a4f8f02f71952
+  m_SaveFileName: GachaPackDockSO_515b4b1266ec9485d88a4f8f02f71952
+  m_Key: default
+  m_EncryptionType: 0
+  gachaPacksList: {fileID: 11400000, guid: b3e92b463c5c4483f8bec9bf50da753b, type: 2}
+  slotAmount: 4
+  gachaPackDockSlots:
+  - gachaPackGUID: ce9c760b507aa44799cb8879ddd916b0
+  - gachaPackGUID: ce9c760b507aa44799cb8879ddd916b0
+  - gachaPackGUID: ce9c760b507aa44799cb8879ddd916b0
+  - gachaPackGUID: ce9c760b507aa44799cb8879ddd916b0

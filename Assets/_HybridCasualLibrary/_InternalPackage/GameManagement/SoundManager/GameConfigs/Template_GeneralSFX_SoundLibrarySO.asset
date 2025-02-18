@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9da85e36961431a936008f85e91be3, type: 3}
+  m_Name: Template_GeneralSFX_SoundLibrarySO
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 60d633b7612ba4e84a5eead7d3c00021, type: 3}
+    - {fileID: 8300000, guid: 6245bc71a1edf49809e5786b819fd2c9, type: 3}
+    - {fileID: 8300000, guid: d54eee87ecdc24d56b1c1c686dda562a, type: 3}
+    - {fileID: 8300000, guid: a6c7b462a11484c22980124344b5f1ba, type: 3}
+    - {fileID: 8300000, guid: da15ccc741f9847ebb8da7dd82d9e1ba, type: 3}
+    - {fileID: 8300000, guid: 9d983ac86a3f74238b39835ac85d9e21, type: 3}
+    - {fileID: 8300000, guid: b13c40a8fe2a942d0aad5bcaef3410bb, type: 3}
+    - {fileID: 8300000, guid: 5ba99d08889a14d35ad457ebfb354fa0, type: 3}
+    - {fileID: 8300000, guid: 840ce8555a1bf4759b3a3942ae625c66, type: 3}
+    - {fileID: 8300000, guid: 0c9256831e2964e94969eca127729321, type: 3}
+    - {fileID: 8300000, guid: 6db55d0c4cfeb4c8ab327198f128b6d1, type: 3}
+    - {fileID: 8300000, guid: 03a70e646b4d34e45b305b10abf793a4, type: 3}
+    - {fileID: 8300000, guid: 3bfaf51c380884f01866836d8a121358, type: 3}
+    - {fileID: 8300000, guid: a5db34e334923418fa3c75f004132d62, type: 3}
+    - {fileID: 8300000, guid: c8ebd79151b7949fa84ec2daa749efdd, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Library
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 15
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIBonusAttribute
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIBoxShaking
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIDropBox
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIEquipAndUse
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIExitButton
+    - Name: $v
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIFillUpStandardCurrency
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIFillUpPremiumCurrency
+    - Name: $v
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UICardFlip
+    - Name: $v
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIIAPPurchase
+    - Name: $v
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIOpenBox
+    - Name: $v
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UITabTransition
+    - Name: $v
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UITapButton
+    - Name: $v
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UITapPLAYButton
+    - Name: $v
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.UIUpgrade
+    - Name: $v
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: GeneralSFX.Confetti
+    - Name: $v
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_EnumScriptsPath: Assets/_InternalPackage/GameManagement/SoundManager/GameConfigs
+  m_SheetID: 1690037505
+  m_SheetName: HybridCasualTemplate_SFX
