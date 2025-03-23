@@ -31,18 +31,12 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
-    - Beans.Unity.Collections
-    - Beans.Unity.Mathematics
     - Cinemachine
     - Coffee.UIParticle
-    - CW.Common
-    - CW.ShaderBundle
-    - Deform
     - Lofelt.NiceVibrations
     - Lofelt.NiceVibrations.Demo
-    - PaintCore
-    - PaintIn3D
     - Plugins
+    - WaterSystem
     showAdvancedSettings: 1
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
